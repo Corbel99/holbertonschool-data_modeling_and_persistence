@@ -1,5 +1,4 @@
-SELECT courses.title,
-       COUNT(assignments.course_id) AS assignment_count
+SELECT courses.title
 FROM courses
 INNER JOIN assignments
 ON courses.id = assignments.course_id
